@@ -1,0 +1,15 @@
+.thumb-20{
+	@include thumb(20px);
+}
+.thumb-40{
+	@include thumb(40px);
+}
+.thumb-60{
+	@include thumb(60px);
+}
+.thumb-80{
+	@include thumb(80px);
+}
+.thumb-100{
+	@include thumb(100px);
+}

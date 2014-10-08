@@ -1,0 +1,71 @@
+.select-primary{
+	background: $gray-dark;
+	@include radius(2);
+	border: 0;
+	color: $light;
+	@include font-size(11);
+	font-weight: 600;
+	text-transform: uppercase;
+	vertical-align: middle;
+	line-height: 22px;
+	padding: 0 17px;
+	@include transition(0.2s);
+	display: inline-block;
+	text-align: left;
+	min-width: 170px;
+	height: 34px;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	box-shadow: 0;
+	position: relative;
+	option{
+		line-height: 22px;
+		padding: 8px 10px;
+	}
+}
+.app-select{
+	position: relative;
+
+	&.select-max{
+		min-width: 100%;
+		.select-primary{
+			min-width: 100%;
+			width: 100%;
+		}
+	}
+	&:before{
+		position: absolute;
+		width: 20px;
+		height: 100%;
+		background: $gray-dark;
+		content: '5';
+		font-family: 'shoplo';
+		color: #fff;
+		display: block;
+		right: 0;
+		top:0;
+		@include radius(2);
+		@include font-size(8);
+		line-height: 34px;
+		text-align: left;
+		z-index: 99;
+	}
+	&.error{
+		&:before{
+			background: $red;
+		}
+		.select-primary{
+			background: $red;
+		}
+	}
+	&.select-light{
+		&:before{
+			background: $light;
+			color: $gray-dark;
+		}
+		.select-primary{
+			background: $light;
+			color: $gray-dark;
+		}
+	}
+}
