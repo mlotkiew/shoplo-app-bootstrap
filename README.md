@@ -1,4 +1,4 @@
 shoplo-app-bootstrap
 ====================
 
-Bootstrap for Shoplo Apps
+Pages of Bootstrap for Shoplo Apps
