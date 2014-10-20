@@ -1,0 +1,61 @@
+//Colors
+
+$gray-dark: 	lighten(#000, 13.5%) !default; // #222
+$gray: 			lighten(#000, 20%) !default;   // #333
+$gray-light:  	#dde0e8 !default;
+$gray-light-2:	#d0d0d0 !default;
+$grey-meta:		#d8d8d8 !default;
+$light:			#fff !default;
+
+$green-light: 	#cee08a !default;
+$red: 			#F55161 !default;
+
+$blue: 			#BFDBE9;
+$dark-blue: 	#1C1F27 !default;
+
+//Alerts
+$color-success: $green-light;
+$color-error: $red;
+$color-info:$blue;
+
+//Tables
+$children-bg: 	#F4F4F4;
+
+//Default background color
+$body-bg: $light !default;
+
+//Global Text Color
+$text-color: $gray;
+
+//Global link color
+$link-color: $gray-light;
+
+//Layout
+$grid-gutter-width: 30px; //for padding and margin
+$grid-columns: 12;
+
+//Container Widths
+$container-sm: 750px;
+$container-md: 970px;
+$container-lg: 1170px;
+
+//Breakpoints
+$break-sm-min: 768px !default;
+$break-md-min:  990px !default;
+$break-lg-min:  1200px !default;
+
+//fonts
+$font-family: 'Open Sans', 'Helvetica', 'Arial' , sans-serif;
+
+$font-size-base: 14px !default;
+$font-size-large: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small: ceil(($font-size-base * 0.90)) !default; // ~13px
+$font-size-xsmall: ceil(($font-size-base * 0.65)) !default; // ~10px
+$font-size-h1: floor(($font-size-base * 2.15)) !default; // ~36px
+$font-size-h2: floor(($font-size-base * 1.8)) !default; // ~30px
+$font-size-h3: ceil(($font-size-base * 1.55)) !default; // ~24px
+$font-size-h4: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5: $font-size-base !default;
+$font-size-h6: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$line-height-base: 1.2em;
