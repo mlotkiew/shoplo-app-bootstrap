@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shoplo Bootstrap for Apps</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/code.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/prism.js" data-default-language="markup"></script>
+</head>
+    <body>
+    <div class="app-wrap">
+	    <div id="leftMenu">
+			<nav>
+				<ul class="clearfix">
+					<li><a href="index.html"><span class="glyphicon icon-shop"></span>Start</a></li>
+					<li><a href="#"><span class="glyphicon icon-shop"></span>Widoki</a>
+						<ul>
+							<li><a href="lista-produktow.html">Lista produktów</a></li>
+							<li><a href="opcje.html">Opcje</a></li>
+						</ul>
+					</li>
+					<li><a href="blocks.html"><span class="glyphicon icon-grid"></span>Elementy</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="app-container">
+			<div class="app-row text-center">
+				<div class="app-span-12">
+					<h1>Lista produktów</h1>
+				</div>
+			</div>
+			<div class="app-row text-center mt-10">
+				<div class="app-span-12">
+					<p>Widok używany w każdej aplikacji, możesz go zastosować np. do listowania produktów, uzytkowników czy innych danych tabelarycznych.</p>
+					<p>Poniższe zdjęcie przedstawia przykład użycia tego widoku w panelu Shoplo.</p>
+				</div>
+				<div class="app-span-12">
+					<img src="img/panel-lista-produktow.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="app-row text-center mt-40">
+				<div class="app-span-12">
+					<h2>Podstawowy kod</h2>
+				</div>
+			</div>
+			<div class="app-row text-center mt-10">
+				<div class="app-span-12">
+					<p>W przypadku widoku listy, celowo nie został użyty div z klasą app-span-12, dzięki temu pozbylismy się paddingów po obu stronach i tabela wyswietlona jest w pełnej szerokości kontenera.</p>
+				</div>
+			</div>
+			<div class="app-row text-center mt-10">
+				<div class="app-span-12">
+<pre class="language-markup">
+<code>&lt;div class="app-row">
+	&lt;table class="table tb-bordered">
+		&lt;thead>
+		    &lt;tr>
+		        &lt;th>#&lt;/th>
+		        &lt;th class="dark">Nazwa kampanii&lt;/th>
+		        &lt;th>Produkt&lt;/th>
+		        &lt;th class="text-center">Aktywna&lt;/th>
+		        &lt;th class="text-center">Ilość wyświetleń&lt;/th>
+		        &lt;th class="text-center">Ilość kliknięć&lt;/th>
+		        &lt;th colspan="2" class="text-right">&lt;/th>
+		    &lt;/tr>
+		&lt;/thead>
+		&lt;tbody>
+			&lt;tr>
+				&lt;td>1&lt;/td>
+				&lt;td>&lt;strong>Kampania testowa 1&lt;/strong>&lt;/td>
+				&lt;td>
+					&lt;span class="thumb-40">
+						&lt;img src="img/vert.jpg">
+					&lt;/span>
+				&lt;/td>
+				&lt;td class="text-left">
+					&lt;div class="checkbox">
+						&lt;input type="checkbox" name="active" id="active2">
+						&lt;label for="active2">&lt;span>aktywuj&lt;/span>&lt;/label>
+					&lt;/div>
+				&lt;/td>
+				&lt;td class="text-center">&lt;span class="btn btn-info">12&lt;/span>&lt;/td>
+				&lt;td class="text-center">&lt;span class="btn btn-success">21&lt;/span>&lt;/td>
+				&lt;td class="action-link pd-left-25">
+					&lt;a href="">&lt;span class="glyphicon icon-note ">&lt;/span>&lt;/a>
+				&lt;/td>
+				&lt;td class="action-link pd-left-25 pd-right-30">
+					&lt;a class="" href="#">&lt;span class="glyphicon icon-trash action-link">&lt;/span>&lt;/a>
+				&lt;/td>
+			&lt;/tr>
+		&lt;/tbody>
+	&lt;/table>
+&lt;/div>
+
+</code>
+</pre>
+				</div>
+			</div>
+			<div class="app-row text-center mt-40">
+				<div class="app-span-12">
+					<h2>Przykład</h2>
+				</div>
+			</div>
+			<div class="app-row">
+				<table class="table tb-bordered">
+					<thead>
+			            <tr>
+			                <th class="pd-left-30 pd-right-20">#</th>
+			                <th class="dark">Nazwa kampanii</th>
+			                <th>Produkt</th>
+			                <th class="text-left">Aktywna</th>
+			                <th class="text-center">Ilość wyświetleń</th>
+			                <th class="text-center">Ilość kliknięć</th>
+			                <th colspan="2" class="text-right"></th>
+			            </tr>
+		            </thead>
+					<tbody>
+					<tr>
+						<td class="pd-left-30 pd-right-20">1</td>
+						<td><strong>Kampania testowa 1</strong></td>
+						<td>
+							<span class="thumb-40">
+							<img src="img/vert.jpg">
+							</span>
+						</td>
+						<td class="text-left">
+							<div class="checkbox">
+								<input type="checkbox" name="active" id="active2">
+								<label for="active2"><span>aktywuj</span></label>
+							</div>
+						</td>
+						<td class="text-center"><span class="btn btn-info">12</span></td>
+						<td class="text-center"><span class="btn btn-success">21</span></td>
+						<td class="action-link pd-left-25">
+							<a href=""><span class="glyphicon icon-note "></span></a>
+						</td>
+						<td class="action-link pd-left-25 pd-right-30">
+							<a class="" href="#"><span class="glyphicon icon-trash action-link"></span></a>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+    </body>
+</html>

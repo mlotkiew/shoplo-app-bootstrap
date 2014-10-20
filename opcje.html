@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shoplo Bootstrap for Apps</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/code.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/prism.js" data-default-language="markup"></script>
+</head>
+    <body>
+    <div class="app-wrap">
+	    <div id="leftMenu">
+			<nav>
+				<ul class="clearfix">
+					<li><a href="index.html"><span class="glyphicon icon-shop"></span>Start</a></li>
+					<li><a href="#"><span class="glyphicon icon-shop"></span>Widoki</a>
+						<ul>
+							<li><a href="lista-produktow.html">Lista produktów</a></li>
+							<li><a href="opcje.html">Opcje</a></li>
+							
+						</ul>
+					</li>
+					<li><a href="blocks.html"><span class="glyphicon icon-grid"></span>Elementy</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="app-container">
+			<div class="app-row text-center">
+				<div class="app-span-12">
+					<h1>Widok opcji</h1>
+				</div>
+			</div>
+			<div class="app-row text-center mt-10">
+				<div class="app-span-12">
+					<p>Ten widok pokazuje, jak w szybki sposób stworzyć stronę z ustawieniami dla Twojej aplikacji.<br>Kod nie został oparty o układ tebelaryczny, dzięki czemu zachowuje pełną responsywność</p>
+					<p>Poniższe zdjęcie przedstawia przykład użycia tego widoku w panelu Shoplo.</p>
+				</div>
+				<div class="app-span-12">
+					<img src="img/panel-opcje.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="app-row text-center mt-40">
+				<div class="app-span-12">
+					<h2>Podstawowy kod</h2>
+				</div>
+			</div>
+			<div class="app-row text-center mt-10">
+				<div class="app-span-12">
+					<p>Dla uzyskania widoku zblożonego do tabeli, służą klasy pomocnicze .app-table-look - odpowiednik znacznika <code class="language-markup">&lt;table></code>, .app-table-tr, .app-table-td oznaczją odpowiednio <code class="language-markup">&lt;tr></code> i <code class="language-markup">&lt;td></code></p>
+				</div>
+			</div>
+			<div class="app-row text-center mt-10">
+				<div class="app-span-12">
+<pre class="language-markup">
+<code>&lt;div class="app-row app-table-look">
+	&lt;div class="app-span-12 app-table-tr">
+        &lt;div class="app-row">
+            &lt;div class="app-span-3 section-header">
+                &lt;h2 class="">Ustawienia ogólne&lt;/h2>
+                &lt;p>Opisz sprzedawany produkt jak najdokładniej.&lt;/p>
+            &lt;/div>
+            &lt;div class="app-span-9 horizontal-form">
+                &lt;div class="app-row">
+                    &lt;div class="form-group app-span-12 app-table-td">
+                        &lt;div class="app-row">
+                            &lt;label for="campaignName" class="app-span-7">Nazwa kampanii&lt;/label>
+                            &lt;div class="app-span-5">
+                                &lt;input type="text" name="campaignName" 
+                                placeholder="Moja kampania" 
+                                id="campaignName" class="form-control ">
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="form-group app-span-12 app-table-td">
+                        &lt;div class="app-row">
+                            &lt;label for="campaignTitle" class="app-span-7">Nagłówek kampanii&lt;/label>
+                            &lt;div class="app-span-5">
+                                &lt;input type="text" name="campaignTitle"
+                                placeholder="Zobacz inne produkty"
+                                id="campaignTitle" class="form-control">
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="form-group app-span-12 app-table-td">
+                    	&lt;div class="app-row">
+                            &lt;label for="campaignDescription" class="app-span-7">Opis oferty&lt;/label>
+                            &lt;div class="app-span-5">
+                                &lt;textarea rows="3" name="campaignDescription" 
+                                id="campaignDescription" class="form-control">&lt;/textarea>
+                            &lt;/div>
+                    	&lt;/div>
+                    &lt;/div>
+                    &lt;div class="form-group app-span-12 app-table-td">
+                    	&lt;div class="app-row">
+                            &lt;label for="active" class="app-span-7">Kampania aktywna&lt;/label>
+                            &lt;div class="checkbox app-span-5">
+                            	&lt;div class="pull-right">
+                                &lt;input type="checkbox" name="active" checked="checked" id="active">
+                                &lt;label for="active">&lt;/label>
+                                &lt;/div>
+                            &lt;/div>
+                    	&lt;/div>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+
+</code>
+</pre>
+				</div>
+			</div>
+			<div class="app-row text-center mt-40">
+				<div class="app-span-12">
+					<h2>Przykład</h2>
+				</div>
+			</div>
+			<div class="app-row app-table-look">
+				<div class="app-span-12 app-table-tr">
+			        <div class="app-row">
+			            <div class="app-span-3 section-header">
+			                <h2 class="">Ustawienia ogólne</h2>
+			                <p>Opisz sprzedawany produkt jak najdokładniej.</p>
+			            </div>
+			            <div class="app-span-9 horizontal-form">
+			                <div class="app-row">
+			                    <div class="form-group app-span-12 app-table-td">
+			                        <div class="app-row">
+			                            <label for="campaignName" class="app-span-7">Nazwa kampanii</label>
+			                            <div class="app-span-5">
+			                                <input type="text" name="campaignName" placeholder="Moja kampania" id="campaignName" class="form-control ">
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="form-group app-span-12 app-table-td">
+			                        <div class="app-row">
+			                            <label for="campaignTitle" class="app-span-7">Nagłówek kampanii</label>
+			                            <div class="app-span-5">
+			                                <input type="text" name="campaignTitle" placeholder="Zobacz jakie inne produkty były kupowane z tym produktem" id="campaignTitle" class="form-control">
+			                            </div>
+			                        </div>
+			                    </div>
+			                    <div class="form-group app-span-12 app-table-td">
+			                    	<div class="app-row">
+			                            <label for="campaignDescription" class="app-span-7">Opis oferty</label>
+			                            <div class="app-span-5">
+			                                <textarea rows="3" name="campaignDescription" id="campaignDescription" class="form-control"></textarea>
+			                            </div>
+			                    	</div>
+			                    </div>
+			                    <div class="form-group app-span-12 app-table-td">
+			                    	<div class="app-row">
+			                            <label for="active" class="app-span-7">Kampania aktywna</label>
+			                            <div class="checkbox app-span-5">
+			                            	<div class="pull-right">
+			                                <input type="checkbox" name="active" checked="checked" id="active">
+			                                <label for="active"></label>
+			                                </div>
+			                            </div>
+			                    	</div>
+			                    </div>
+			                    <div class="form-group app-span-12 app-table-td">
+			                    	<div class="app-row">
+			                            <label for="active" class="app-span-7">Kolor</label>
+			                            <div class="checkbox app-span-5">
+			                            	<div class="pull-right">
+			                            		<div class="input-group demo2">
+			                            		<span class="input-group-addon"><i></i></span>
+			                               		<input type="text" value="" class="form-control" />
+			                               		</div>
+			                                </div>
+			                            </div>
+			                    	</div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+    </body>
+</html>
