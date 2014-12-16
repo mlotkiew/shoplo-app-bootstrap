@@ -35,3 +35,10 @@
 @import 'helpers/helper-class';
 @import 'helpers/margins';
 @import 'helpers/paddings'; //mostly for table cells purpose
+
+//vendor
+@import 'vendor/remodal';
+@import 'vendor/colorpicker';
+
+//apps
+@import 'apps/instockreminder/buttons.scss';
