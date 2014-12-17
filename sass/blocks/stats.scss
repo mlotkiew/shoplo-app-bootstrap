@@ -1,0 +1,29 @@
+.stats {
+	.form-group {
+		label {
+		font-weight: normal;
+		font-size: 11px;
+		text-transform: uppercase;
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.value  {
+			font-size: 26px;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+
+	sup {
+		font-size: 14px;
+		font-weight: normal;
+		left: 2px;
+		top: -8px;
+	}
+	
+}
+.app-table-look .app-table-tr .stats .app-table-td {
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
