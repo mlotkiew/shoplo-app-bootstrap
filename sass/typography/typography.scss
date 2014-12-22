@@ -74,3 +74,14 @@ p{
 .color-light{
 	color: $light;
 }
+a, a:hover {
+	color: #333; 
+}
+a.glyphicon {
+	opacity: .3;
+	-webkit-transition-duration: 0.2s; 
+    transition-duration: 0.2s;
+}
+a.glyphicon:hover {
+	opacity: 1;
+}

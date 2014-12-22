@@ -5,6 +5,7 @@
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 3px;
 }
 .stats .form-group .value {
   font-size: 26px;
@@ -21,4 +22,5 @@
 .app-table-look .app-table-tr .stats .app-table-td {
   padding-top: 15px;
   padding-bottom: 25px;
+  border-bottom: none;
 }
